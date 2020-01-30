@@ -1,0 +1,30 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>net462</TargetFramework>
+        <AssemblyName>Hot Task</AssemblyName>
+
+        <Authors>Ellpeck</Authors>
+
+        <AutoBundleUseLib>true</AutoBundleUseLib>
+        <AutoBundleLibExceptions>.itch.toml</AutoBundleLibExceptions>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <Content Include="..\HotTask\Content\*\**" />
+        <MonoGameContentReference Include="..\HotTask\Content\Content.mgcb" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="AutoBundle" Version="2.1.3" />
+      <PackageReference Include="Contentless" Version="2.0.6" />
+      <PackageReference Include="MonoGame.Content.Builder" Version="3.7.0.9" />
+      <PackageReference Include="MonoGame.Framework.DesktopGL" Version="3.7.0.1708" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\HotTask\HotTask.csproj" />
+    </ItemGroup>
+
+</Project>
